@@ -130,7 +130,7 @@ angular.module('angucomplete', [] )
                         $scope.processResults(matches, str);
 
                     } else {
-                        $http.get($scope.url + str, {}).
+                        $http.jsonp($scope.url + str, {params: {callback: 'JSON_CALLBACK'}}).
                             success(function(responseData, status, headers, config) {
                                 $scope.searching = false;
                                 $scope.processResults((($scope.dataField) ? responseData[$scope.dataField] : responseData ), str);
