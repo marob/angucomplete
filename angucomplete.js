@@ -217,7 +217,7 @@ angular.module('angucomplete', [] )
                         event.stopPropagation();
                     }
 
-                } else if (event.which == 13) {
+                } else if (event.which == 13 || event.which == 9) {
                     if ($scope.results && $scope.currentIndex >= 0 && $scope.currentIndex < $scope.results.length) {
                         $scope.selectResult($scope.results[$scope.currentIndex]);
                         $scope.$apply();
