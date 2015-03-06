@@ -197,9 +197,9 @@ angular.module('angucomplete', [] )
 
             var inputField = elem.find('input');
 
-            inputField.on('keyup', $scope.keyPressed);
+            inputField.on('keydown', $scope.keyPressed);
 
-            elem.on("keyup", function (event) {
+            elem.on("keydown", function (event) {
                 if(event.which === 40) {
                     if ($scope.results && ($scope.currentIndex + 1) < $scope.results.length) {
                         $scope.currentIndex ++;
