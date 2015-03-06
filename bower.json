@@ -13,8 +13,7 @@
   ],
   "license": "MIT",
   "main": [
-    "angucomplete.js",
-    "angucomplete.css"
+    "angucomplete.js"
   ],
   "ignore": [
     "example",
