@@ -159,7 +159,7 @@ angular.module('angucomplete', [] )
             }
 
             $scope.keyPressed = function(event) {
-                if (!(event.which == 38 || event.which == 40 || event.which == 13)) {
+                if (!(event.which == 38 || event.which == 40 || event.which == 13 || event.which == 9)) {
                     if (!$scope.searchStr || $scope.searchStr == "") {
                         $scope.showDropdown = false;
                         $scope.lastSearchTerm = null
